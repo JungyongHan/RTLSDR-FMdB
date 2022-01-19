@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>297</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SDR 설정 변경</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>증폭(Gain)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>샘플레이트</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>180</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>밴드위드</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="input_gain">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>80</y>
+     <width>76</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>0.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0.9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1.4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2.7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3.7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7.7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>8.7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>12.5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>14.4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>15.7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>16.6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>19.7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>20.7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>22.9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>25.4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>28.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>29.7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>32.8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>33.8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>36.4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>37.2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>38.6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>40.2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>42.1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>43.4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>43.9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>44.5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>48.0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>49.6</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="input_samplerate">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>130</y>
+     <width>76</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>2400000.0</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="input_bandwidth">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>180</y>
+     <width>76</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>200000</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="btn_callback">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>220</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>돌아가기</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>421</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ff0000;&quot;&gt;주의: 이 창을 띄어놓으면 측정이 멈춥니다.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
