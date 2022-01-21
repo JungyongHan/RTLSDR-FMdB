@@ -32,6 +32,19 @@
     pip install -r requirements.txt
     python main.py
 
+    
+
+GPS 포트 확인하는 방법
+
+    dmesg
+
+입력후 USB 관련 로그에서 포트 확인
+
+EX. /dev/ttyACM0
+
+config.ini 파일에서 comport 에서 포트입력
+
+
 
 ---
 
