@@ -1,10 +1,45 @@
-# Windows
+# 사용법
+## Linux
+
+#### GPS의 포트는 직접알아내셔야합니다 ㅠ.ㅠ
+
+    sudo apt-get update
+    sudo apt-get upgrade
+
+    sudo apt-get install git
+    sudo apt-get install cmake
+    sudo apt-get install build-essential
+    sudo apt-get install libsub-1.0-0-dev
+
+    cd ~
+    sudo git clone git://git.osmocom.org/rtl-sdr.git
+    cd rtl-sdr
+    sudo mkdir build
+    cd build
+    sudo cmake ../ -DINSTALL_UDEV_RULES=ON
+    sudo make
+    sudo make install
+    sudo ldconfig
+    sudo cp ../rtl-sdr.rules /etc/udev/rules.d/
+    cd /etc/modprobe.d
+    sudo echo blacklist dvb_usb_rtl28xxu > blacklist-rtl.conf
+    sudo reboot now
+
+    cd ~
+    git https://github.com/JungyongHan/RTLSDR-FMdB
+    cd RTLSDR-FMdb
+    pip install --upgrade pip
+    pip install -r requirements.txt
+    python main.py
+
+
+---
+
+## Windows
 
 #### 실행하고 있는 윈도우 계정 이름에 한글이 들어가 있으면 안 됩니다. (새로운 계정 만드는 걸 추천)
 #### 직접 설치하는 경우 GPS USB 포트 번호를 config.ini 에 반드시 입력해주어야 합니다.
 
-
-설치 순서.
 1. setup 폴더 들어가기.
 
 2. python-3.8.6.exe 설치
@@ -27,7 +62,7 @@
 
 11. libsdr 폴더에 있는 두 librtlsdr.dll, rtlsdr.dll 파일을 c:\windows\system32 폴더에 복사 붙여넣기(관리자 권한 필요)
 
-12. 필독.txt 폴더가 있는곳으로 와서 loading-module.bat 실행
+12. loading-module.bat 실행
 
 13. 장치관리자 실행 후 USB GPS 연결
 
