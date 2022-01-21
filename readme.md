@@ -1,7 +1,6 @@
-# 사용법
+# 설치방법
 ## Linux
 
-#### GPS의 포트는 직접알아내셔야합니다 ㅠ.ㅠ
 
     sudo apt-get update
     sudo apt-get upgrade
