@@ -1,5 +1,4 @@
 @echo off
-git fetch --all
-git reset --hard main
+update.bat
 python main.py
 pause

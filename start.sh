@@ -1,4 +1,3 @@
-git fetch --all
-git reset --hard main
+./update.sh
 python main.py
 pause
