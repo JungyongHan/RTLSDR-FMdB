@@ -5,7 +5,8 @@
     sudo apt-get update
     sudo apt-get upgrade
 
-    sudo apt-get install -y cmake build-essential python3-pip3 libusb-1.0-0-dev python3-numpy git python3-scipy python3-matplotlib libffi-dev python3-pyqtgraph
+    sudo apt-get install -y cmake build-essential libusb-1.0-0-dev git python3-numpy
+    sudo apt-get install -y python3-pip3 python3-scipy python3-matplotlib libffi-dev python3-pyqtgraph
     sudo apt-get install -y gpsd gpsd-clients
     sudo apt install pkg-config
 
@@ -25,7 +26,7 @@
     cd RTLSDR-FMdb
     pip3 install --upgrade pip
     pip3 install pyrtlsdr
-    
+
     python main.py
 
     
