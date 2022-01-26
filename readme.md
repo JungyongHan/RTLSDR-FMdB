@@ -5,10 +5,9 @@
     sudo apt-get update
     sudo apt-get upgrade
 
-    sudo apt-get install git
-    sudo apt-get install cmake
-    sudo apt-get install build-essential
-    sudo apt-get install libsub-1.0-0-dev
+    sudo apt-get install -y cmake build-essential python3-pip3 libusb-1.0-0-dev python3-numpy git python3-scipy python3-matplotlib libffi-dev python3-pyqtgraph
+    sudo apt-get install -y gpsd gpsd-clients
+    sudo apt install pkg-config
 
     cd ~
     sudo git clone git://git.osmocom.org/rtl-sdr.git
@@ -19,16 +18,14 @@
     sudo make
     sudo make install
     sudo ldconfig
-    sudo cp ../rtl-sdr.rules /etc/udev/rules.d/
-    cd /etc/modprobe.d
-    sudo echo blacklist dvb_usb_rtl28xxu > blacklist-rtl.conf
     sudo reboot now
 
     cd ~
-    git https://github.com/JungyongHan/RTLSDR-FMdB
+    git clone https://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@github.com/JungyongHan/RTLSDR-FMdB
     cd RTLSDR-FMdb
-    pip install --upgrade pip
-    pip install -r requirements.txt
+    pip3 install --upgrade pip
+    pip3 install pyrtlsdr
+    
     python main.py
 
     
