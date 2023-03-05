@@ -22,7 +22,7 @@
     sudo reboot now
 
     cd ~
-    git clone https://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@github.com/JungyongHan/RTLSDR-FMdB
+    git clone https://github.com/JungyongHan/RTLSDR-FMdB
     cd RTLSDR-FMdb
     pip3 install --upgrade pip
     pip3 install pyrtlsdr
